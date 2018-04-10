@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#eef0ec"
-    tools:context="com.example.administrator.dgcalculator.MainActivity"
+    tools:context="com.example.asus.dgcalculator.MainActivity"
     android:weightSum="1"
     >
 
@@ -295,6 +295,30 @@
                 android:background="@color/colorAccent"
                 android:text="="
                 android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:divider="#0a0a0a">
+
+            <Button
+                android:id="@+id/txtjzzh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="进制转换"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/txtdwhs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="单位换算"
+                android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

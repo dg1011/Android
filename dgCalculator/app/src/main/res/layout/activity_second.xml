@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eef0ec"
+    tools:context="com.example.asus.dgcalculator.SecondActivity"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:background="#3f3c3c"
+        android:divider="@color/colorAccent"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <EditText
+            android:id="@+id/text_1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#ffffff"
+            android:textSize="40dip"
+            android:layout_weight="4"
+            android:hint="输入的进制是"
+            android:textColorHint="#aaaaaa"/>
+
+        <EditText
+            android:id="@+id/text_2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#ffffff"
+            android:textSize="40dip"
+            android:layout_weight="4"
+            android:hint="输入将要转换数"
+            android:textColorHint="#aaaaaa"/>
+
+        <EditText
+            android:id="@+id/text_3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#ffffff"
+            android:textSize="40dip"
+            android:layout_weight="4"
+            android:hint="将要转换的进制"
+            android:textColorHint="#aaaaaa"/>
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|left"
+            android:textSize="40dip"
+            android:layout_weight="4"
+            android:hint="结果"
+            android:textColorHint="#aaaaaa"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="#0a0a0a">
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:divider="#0a0a0a">
+
+            <Button
+                android:id="@+id/btnconversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="进制转换"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="返回"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
