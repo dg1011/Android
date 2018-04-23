@@ -41,7 +41,6 @@ public class UserList extends AppCompatActivity {
             item.put(PHONE, phone[i]);
             items.add(item);
         }
-
         SimpleAdapter adapter = new SimpleAdapter(this, items,
                 R.layout.item,
                 new String[]{NAME, GRADE, ID_NUMBER, SEX, PHONE},

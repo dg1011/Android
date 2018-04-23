@@ -24,8 +24,7 @@
         android:id="@+id/text_param"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="在这里输入参数"
-        android:text="修改这里改变参数"/>
+        android:hint="在这里输入参数" />
 
     <TextView
         android:id="@+id/tv_result"
